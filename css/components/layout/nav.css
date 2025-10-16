@@ -5,7 +5,7 @@ nav {
   z-index: 9999;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: calc(100vw);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,6 +68,14 @@ nav .basket-icon {
   padding: var(--md);
   padding-top: 140px;
   background-color: var(--slate-900);
+  transition: all 0.5s;
+}
+
+.nav-close {
+  transform: translateX(-100vw);
+}
+.nav-open {
+  transform: translateX(0);
 }
 
 .search-bar {
