@@ -5,7 +5,9 @@ main form {
   margin-bottom: var(--2xl);
   font-family: "Switzer", sans-serif;
 }
-
+.typo-display {
+  margin-bottom: var(--lg);
+}
 .reservation-calendar {
   display: flex;
   flex-direction: column;
