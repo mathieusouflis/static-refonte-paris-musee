@@ -204,7 +204,7 @@ Créez une liste des composants à développer basée sur le Figma :
 
 - [ ] Header
 - [ ] Navigation
-- [ ] Footer
+- [x] Footer
 - [ ] Base Card
 - [ ] Actualité Card
 - [ ] Actualité title Card
