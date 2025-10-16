@@ -3,3 +3,9 @@
   height: 1px;
   background-color: var(--slate-500);
 }
+
+.divider-vertical {
+  height: auto;
+  width: 1px;
+  background-color: var(--slate-500);
+}
