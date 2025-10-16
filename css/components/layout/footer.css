@@ -1,4 +1,71 @@
 footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: #00000077;
+  padding: var(--lg);
+  gap: var(--lg);
+  background-image: url("https://cdn.cosmos.so/8de172f3-de16-4782-8a62-38e199bbbb5b?format=jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: darken;
+}
+
+.newsletter div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs);
+}
+
+.newsletter p:first-of-type {
+  text-transform: uppercase;
+}
+
+.newsletter form {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter form button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: -webkit-fill-available;
+  background-color: var(--slate-50);
+  padding-inline: var(--lg);
+  padding-block: var(--md);
+  border-radius: 8px;
+  border: none;
+  border-left: 1px dashed black;
+  stroke-dashoffset: 2px;
+  box-shadow: none;
+}
+.newsletter form input {
+  position: relative;
+  height: -webkit-fill-available;
+  width: 100%;
+  background-color: var(--slate-50);
+  padding-inline: var(--md);
+  padding-block: var(--sm);
+  border-radius: 8px;
+  border: none;
+  border-right: 1px dashed black;
+  stroke-dashoffset: 2px;
+  box-shadow: none;
+}
+
+.newsletter form input:focus {
+  outline: none;
+}
+
+.main-footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -6,6 +73,7 @@ footer {
   background-color: var(--slate-900);
   gap: var(--lg);
 }
+
 .footerTop {
   display: flex;
   flex-direction: row;
