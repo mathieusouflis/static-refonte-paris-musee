@@ -1,0 +1,314 @@
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--2xl);
+  margin-bottom: var(--2xl);
+  font-family: "Switzer", sans-serif;
+}
+
+.reservation-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  border: 1px solid var(--slate-300);
+  padding: var(--md);
+}
+
+.reservation-calendar-month {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--md);
+  border-bottom: 1px solid var(--slate-200);
+}
+
+.reservation-calendar-month p {
+  text-align: center;
+  font-family: "Switzer", sans-serif;
+}
+.reservation-calendar-main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+.reservation-calendar-main span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--xs);
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 14px;
+}
+
+.reservation-calendar-main span.day-label {
+  font-weight: var(--font-medium);
+  font-size: 12px;
+  color: var(--slate-600);
+  cursor: default;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+
+.reservation-calendar-main span:empty {
+  cursor: default;
+  pointer-events: none;
+}
+
+.reservation-calendar-main .date-today {
+  background-color: var(--blue-600);
+  color: var(--white);
+  font-weight: var(--font-semi-bold);
+}
+
+.reservation-calendar-main span s {
+  text-decoration: line-through;
+  color: var(--slate-400);
+}
+
+.reservation-calendar-main span:has(s) {
+  background-color: var(--slate-100);
+  color: var(--slate-400);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.reservation-calendar-main span:has(~ .date-today):not(:empty):not(.day-label) {
+  background-color: var(--slate-100);
+  color: var(--slate-400);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.reservation-calendar-main
+  .date-today
+  ~ span:not(:empty):not(:has(s)):not(.day-label):hover {
+  background-color: var(--slate-200);
+}
+
+.reservation-hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.tab-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sm);
+}
+
+.hours-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hours-container span {
+  padding: var(--sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Switzer", sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+.hours-container span:not(.active):hover {
+  border: 1px dashed var(--slate-500);
+}
+
+.hours-container span.active {
+  border: 1px solid var(--slate-500);
+  background-color: var(--slate-200);
+}
+
+.reservation-tarifs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.tarifs-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarif-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--md);
+  gap: var(--md);
+  border-bottom: 1px solid var(--slate-200);
+  background-color: var(--white);
+}
+
+.tarif-item-container:hover {
+  background-color: var(--slate-50);
+}
+
+.tarif-item-container:last-child {
+  border-bottom: none;
+}
+
+.tarif-item-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--sm);
+  font-family: "Switzer", sans-serif;
+}
+
+.tarif-item-left p {
+  font-size: 14px;
+  font-weight: var(--font-medium);
+  color: var(--black);
+}
+
+.tarif-item-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--md);
+  font-family: "Switzer", sans-serif;
+}
+
+.tarif-item-right > span {
+  font-size: 14px;
+  font-weight: var(--font-semi-bold);
+  color: var(--black);
+  min-width: 40px;
+  text-align: right;
+}
+
+.tooltip-container {
+  position: relative;
+  cursor: help;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltip {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2px;
+  color: var(--slate-500);
+  transition: color 0.2s ease;
+}
+
+.tooltip-social-handicap:hover::after {
+  content: "Demandeurs d'emploi, bénéficiaires RSA, handicap + accompagnateur";
+}
+
+.tooltip-jeunes-et-etudiants:hover::after {
+  content: "Moins de 18 ans, étudiants en art, Passe Jeunes";
+}
+
+.tooltip-pro-culture:hover::after {
+  content: "Journalistes, guides, artistes, membres ICOM";
+}
+
+.tooltip-partners-invitations:hover::after {
+  content: "Adhérents Paris Musées, laissez-passer, billets partenaires";
+}
+
+.tooltip-container:hover::after {
+  display: block;
+  position: absolute;
+  left: -50%;
+  bottom: calc(100% + 10px);
+  background-color: var(--slate-800);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: max-content;
+  max-width: 25ch;
+  z-index: 10;
+  font-size: 12px;
+  font-family: "Switzer", sans-serif;
+  font-weight: var(--font-regular);
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-container:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 25%;
+  bottom: calc(100% + 4px);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent; /*To make it as a triangle*/
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--slate-800);
+  z-index: 10;
+}
+
+.tarif-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--md);
+  position: relative;
+  overflow: visible;
+  font-family: "Switzer", sans-serif;
+}
+
+.tarif-count {
+  font-size: var(--font-element-title);
+}
+
+.tarif-counter .counter-button {
+  display: flex;
+  gap: var(--md);
+  align-items: center;
+  padding: 6px;
+  background-color: var(--black);
+  border-radius: 100px;
+}
+
+.tarif-item-container .lucide {
+  stroke-width: 2px;
+  width: 16px;
+  height: 16px;
+  stroke: var(--white);
+}
+
+.continue-order {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: var(--md);
+}
+
+.continue-order button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sm);
+  padding: var(--md) var(--lg);
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Switzer", sans-serif;
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.continue-order button svg {
+  stroke-width: 2px;
+  width: 18px;
+  height: 18px;
+}

@@ -1,0 +1,27 @@
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  gap: var(--sm);
+}
+
+.tab-container-underline {
+  border-bottom: 1px solid var(--slate-400);
+}
+
+.tab-container-option {
+  color: black;
+  text-transform: uppercase;
+  padding-block: var(--xs);
+  padding-inline: var(--md);
+  font-weight: var(--font-medium);
+  /*FONT P*/
+}
+
+.tab-container-divider {
+  background-color: var(--slate-500);
+}
+
+.tab-container-option.tab-active {
+  color: var(--slate-200);
+  background-color: var(--slate-900);
+}
