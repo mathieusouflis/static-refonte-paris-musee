@@ -1,23 +1,23 @@
-.font-display {
-    font-family: "Gambetta", serif;
-    font-size: var(--font-display);
-    font-weight: var(--font-regular);
+.typo-display {
+  font-family: "Gambetta", serif;
+  font-size: var(--font-display);
+  font-weight: var(--font-regular);
 }
 
-.font-h2 {
-    font-family: "Switzer", serif;
-    font-size: var(--font-h2);
-    font-weight: var(--font-regular);
+.typo-h2 {
+  font-family: "Switzer", sans-serif;
+  font-size: var(--font-h2);
+  font-weight: var(--font-regular);
 }
 
-.font-p {
-    font-family: "Switzer", serif;
-    font-size: var(--font-p);
-    font-weight: var(--font-regular);
+.typo-p {
+  font-family: "Switzer", sans-serif;
+  font-size: var(--font-p);
+  font-weight: var(--font-regular);
 }
 
-.font-card-title {
-    font-family: "Switzer", serif;
-    font-size: var(--font-card-title);
-    font-weight: var(--font-medium);
+.typo-card-title {
+  font-family: "Switzer", sans-serif;
+  font-size: var(--font-card-title);
+  font-weight: var(--font-medium);
 }
