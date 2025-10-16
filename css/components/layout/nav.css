@@ -1,0 +1,142 @@
+@import url("../../global.css");
+
+nav {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--md);
+  color: black;
+}
+
+nav .paris-musee-small-icon {
+  fill: black;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--md);
+}
+
+nav .basket-icon {
+  stroke-width: 1.2px;
+  width: 24px;
+  aspect-ratio: 1/1;
+}
+
+.burger-menu {
+  position: relative;
+  width: 72px;
+  height: 46px;
+}
+
+.burger-line-1 {
+  position: absolute;
+  top: 17px;
+  left: 9px;
+  width: 54px;
+  height: 1px;
+  background-color: black;
+}
+
+.burger-line-2 {
+  position: absolute;
+  bottom: 17px;
+  left: 9px;
+  width: 54px;
+  height: 1px;
+  background-color: black;
+}
+
+.nav-content {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--md);
+  padding-top: 140px;
+  background-color: var(--slate-900);
+}
+
+.search-bar {
+  gap: var(--md);
+  padding: var(--md);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--slate-300);
+  color: var(--slate-200);
+}
+
+.search-bar p {
+  color: var(--slate-400);
+}
+
+.search-bar .search-icon {
+  width: 21px;
+  aspect-ratio: 1/1;
+  stroke-width: 1.2px;
+}
+
+.nav-content .nav-content-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xl);
+}
+
+.nav-content-links-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.nav-content-links-main.nav-primary-links a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Switzer", sans-serif;
+  font-size: 20px;
+  font-weight: var(--font-medium);
+  color: var(--slate-200);
+  gap: var(--sm);
+}
+
+.nav-content-links-main.nav-secondary-links a {
+  font-family: "Switzer", sans-serif;
+  font-size: 14px;
+  font-weight: var(--font-regular);
+  color: var(--slate-200);
+}
+
+.nav-content-link-alt {
+  position: relative;
+}
+
+.nav-content-link-alt::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2.5px);
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  background-color: var(--blue-600);
+}
+
+.nav-content-icons {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
