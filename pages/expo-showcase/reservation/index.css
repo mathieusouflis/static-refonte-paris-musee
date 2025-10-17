@@ -289,7 +289,7 @@ main form {
   margin-top: var(--md);
 }
 
-.continue-order button {
+.continue-order a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -309,7 +309,7 @@ main form {
   width: 100%;
 }
 
-.continue-order button svg {
+.continue-order a svg {
   stroke-width: 2px;
   width: 18px;
   height: 18px;
