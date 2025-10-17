@@ -1,0 +1,23 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--2xl);
+  margin-bottom: var(--2xl);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  margin-bottom: 330px;
+}
+
+.main-header p {
+  max-width: 238px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--lg);
+}
