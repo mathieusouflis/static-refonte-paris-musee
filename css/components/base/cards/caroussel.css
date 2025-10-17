@@ -1,0 +1,19 @@
+.caroussel-trigger {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: var(--sm);
+}
+
+.caroussel-trigger span {
+  width: 51px;
+  height: 1px;
+  background-color: transparent;
+}
+
+.caroussel-trigger svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1px;
+}

@@ -1,25 +1,32 @@
 .exposition-card {
-    width: auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 16px;
-  }
-  
-  .exposition-card img {
-    object-fit: cover;
-  }
-  
-  .exposition-card .typo-exposition-title {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    font-weight: var(--font-medium);
-  }
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--xs);
+  font-family: "Switzer", sans-serif;
+}
 
-  .exposition-card .icon
-  {display: flex;
-    width: 100%;
-    justify-content: flex-end;
+.exposition-card img {
+  object-fit: cover;
+}
 
-  }
+.exposition-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.exposition-title svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 1.2px;
+}
+
+.typo-exposition-title {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  font-family: "Switzer", sans-serif;
+  font-weight: var(--font-medium);
+  text-transform: uppercase;
+}
