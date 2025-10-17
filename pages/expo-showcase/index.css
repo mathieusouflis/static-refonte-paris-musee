@@ -1,0 +1,77 @@
+main {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--2xl);
+}
+
+.main-header {
+  background-image: url("https://cdn.sanity.io/images/w0wy8f3r/production/ad90c708f1689a8918523714d47e3c735f14b74f-3228x2282.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: darken;
+  background-color: #00000077;
+  padding-bottom: var(--xl);
+}
+
+.main-header-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+  margin-top: var(--2xl);
+  margin-inline: var(--md);
+  color: white;
+}
+
+.ticket-order-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--md);
+  padding: var(--md) var(--lg);
+  background-color: var(--black);
+  color: var(--slate-200);
+  text-transform: uppercase;
+  font-weight: var(--font-semi-bold);
+  margin-inline: var(--md);
+  margin-top: calc(-1 * var(--xl));
+}
+
+.ticket-order-button svg {
+  stroke-width: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: var(--md);
+  margin-bottom: var(--2xl);
+  gap: var(--xl);
+}
+
+.exposition-head {
+  display: flex;
+  flex-direction: column;
+  gap: var(--md);
+}
+
+.exposition-card img {
+  height: 302px;
+}
+
+.image-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: var(--2xl);
+  padding-block: var(--xl);
+  background-color: var(--slate-900);
+  box-shadow: 0 0 0 var(--md) var(--slate-900);
+  color: var(--slate-200);
+}
+
+.image-showcase .typo-exposition-title {
+  text-transform: none;
+}
