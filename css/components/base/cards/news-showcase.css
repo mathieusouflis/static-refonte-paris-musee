@@ -9,13 +9,6 @@
   border-bottom: 1px solid var(--slate-400);
 }
 
-.agenda-date-title {
-  font-family: "Switzer", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: var(--font-regular);
-}
-
 section a:last-of-type .news-showcase {
   border-bottom: none;
 }

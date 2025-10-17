@@ -22,9 +22,21 @@ section {
   gap: var(--lg);
 }
 
-.agenda-date-title {
-  font-family: "Switzer", sans-serif;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: var(--font-regular);
+.agenda-header {
+  display: flex;
+  flex-direction: row;
+  gap: var(--md);
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.agenda-header div {
+  display: flex;
+  flex-direction: row;
+  gap: var(--md);
+}
+
+.agenda-header svg {
+  stroke-width: 1.5px;
 }
