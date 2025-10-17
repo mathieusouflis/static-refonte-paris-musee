@@ -1,34 +1,48 @@
 .news-showcase {
-    width: auto;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 16px;
-  }
-  
-  .news-showcase img {
-    object-fit: cover;
-  }
-  
-  .news-showcase .typo-showcase-title {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    font-weight: var(--font-medium);
-  }
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--lg);
+  margin-bottom: var(--md);
+  gap: var(--xs);
+  border-bottom: 1px solid var(--slate-400);
+}
 
-  div.news-showcase
-  {border-bottom:  2px solid black;
-  }
+.agenda-date-title {
+  font-family: "Switzer", sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: var(--font-regular);
+}
 
-  .news-showcase .icon
-  {display: flex;
-    width: 100%;
-    justify-content: flex-end;
+section a:last-of-type .news-showcase {
+  border-bottom: none;
+}
 
-  }
+.news-showcase img {
+  object-fit: cover;
+}
 
+.new-title {
+  display: flex;
+  flex-direction: row;
+  gap: var(--md);
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
+.new-title .typo-card-title {
+  width: 100%;
+}
 
-  
-  
+.news-showcase .icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 24px;
+  height: 24px;
+}
+
+.icon svg {
+  stroke-width: 1px;
+}
