@@ -6,7 +6,7 @@ main {
 }
 
 .main-header {
-  background-image: url("https://cdn.sanity.io/images/w0wy8f3r/production/ad90c708f1689a8918523714d47e3c735f14b74f-3228x2282.jpg");
+  background-image: url("../../assets/images/20.png");
   background-size: cover;
   background-position: bottom;
   background-blend-mode: darken;
@@ -74,4 +74,30 @@ main {
 
 .image-showcase .typo-exposition-title {
   text-transform: none;
+}
+
+.interview {
+  position: relative;
+}
+
+.interview img {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+
+.interview .play-button {
+  display: flex;
+  padding: var(--sm);
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff77;
+}
+
+.interview svg {
+  fill: var(--slate-900);
+  color: var(--slate-900);
 }
