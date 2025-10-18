@@ -10,11 +10,12 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: var(--md);
-  color: black;
+  color: var(--slate-50);
+  mix-blend-mode: exclusion;
 }
 
 nav .paris-musee-small-icon {
-  fill: black;
+  fill: var(--slate-50);
 }
 
 .nav-right {
@@ -43,7 +44,7 @@ nav .basket-icon {
   left: 9px;
   width: 54px;
   height: 1px;
-  background-color: black;
+  background-color: var(--slate-50);
 }
 
 .burger-line-2 {
@@ -52,7 +53,7 @@ nav .basket-icon {
   left: 9px;
   width: 54px;
   height: 1px;
-  background-color: black;
+  background-color: var(--slate-50);
 }
 
 .nav-content {
